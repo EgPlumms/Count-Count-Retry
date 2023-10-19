@@ -17,8 +17,6 @@ Bag_100p_Value = 20
 Bag_200p_Value = 10
 
 cointypes = 2.00, 1.00, 0.50, 0.20, 0.10, 0.05, 0.02, 0.01
-Max_Bag = 8
-Max_Bag = float(Max_Bag)
 
 print("""
   ______             __                   ______                                   __     
@@ -43,9 +41,9 @@ for i in range(0,Bag_Amount) :
         else :
             weight1 = float(weight1)
             Amount1 = weight1 - Total_Bag1p_Weight
-        if Amount1 < Total_Bag1p_Weight :
+        if Amount1 > Total_Bag1p_Weight :
             print(Amount1,"Needs To Be Removed\n")
-        elif Amount1 > Total_Bag1p_Weight :
+        elif Amount1 < Total_Bag1p_Weight :
             print(Amount1,"Needs To Be Added\n")
     elif type1 == '0.02' : 
         print("What Is The Weight Of The Bag?")
@@ -56,7 +54,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight2 = float(weight2)
             Amount2 = weight2 - Total_Bag2p_Weight
-        if Amount2 < Total_Bag2p_Weight :
+        if Amount2 > Total_Bag2p_Weight :
             print(Amount2,"Needs To Be Removed\n")
         else :
             print(Amount2,"Needs To Be Added\n")
@@ -69,7 +67,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight3 = float(weight3)
             Amount3 = weight3 - Total_Bag5p_Weight
-        if Amount3 < Total_Bag5p_Weight :
+        if Amount3 > Total_Bag5p_Weight :
             print(Amount3,"Needs To Be Removed\n")
         else :
             print(Amount3,"Needs To Be Added\n")
@@ -82,7 +80,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight4 = float(weight4)
             Amount4 = weight4 - Total_Bag10p_Weight 
-        if Amount4 < Total_Bag10p_Weight :
+        if Amount4 > Total_Bag10p_Weight :
             print(Amount4,"Needs To Be Removed\n")
         else :
             print(Amount4,"Needs To Be Added\n")
@@ -95,7 +93,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight5 = float(weight5)
             Amount5 = weight5 - Total_Bag20p_Weight
-        if Amount5 < Total_Bag20p_Weight :
+        if Amount5 > Total_Bag20p_Weight :
             print(Amount5,"Needs To Be Removed\n")
         else :
             print(Amount5,"Needs To Be Added\n")
@@ -108,7 +106,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight6 = float(weight6)
             Amount6 = weight6 - Total_Bag50p_Weight
-        if Amount6 < Total_Bag50p_Weight :
+        if Amount6 > Total_Bag50p_Weight :
             print(Amount6,"Needs To Be Removed\n")
         else :
             print(Amount6,"Needs To Be Added\n")
@@ -121,7 +119,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight7 = float(weight7)
             Amount7 = weight7 - Total_Bag100p_Weight
-        if Amount7 < Total_Bag100p_Weight :
+        if Amount7 > Total_Bag100p_Weight :
            print(Amount7,"Needs To Be Removed\n")
         else :
            print(Amount7,"Needs To Be Added\n")
@@ -134,7 +132,7 @@ for i in range(0,Bag_Amount) :
         else :
             weight8 = float(weight8)
             Amount8 = weight8 - Total_Bag200p_Weight
-        if Amount8 < Total_Bag200p_Weight :
+        if Amount8 > Total_Bag200p_Weight :
            print(Amount8,"Needs To Be Removed\n")
         else :
             print(Amount8,"Needs To Be Added\n")
@@ -143,49 +141,53 @@ for i in range(0,Bag_Amount) :
 
 print("What Are the Volunteers Names?(Enter Names Below)\n")
 if Bag_Amount == 1 : 
-    Vol1 = input()
+  Vol1 = input()
 elif Bag_Amount == 2 :
-    Vol1 = input()
-    Vol2 = input()
+  Vol1 = input()
+  Vol2 = input()
 elif Bag_Amount == 3 :
-    Vol1 = input()
-    Vol2 = input()
-    Vol3 = input()
+  Vol1 = input()
+  Vol2 = input()
+  Vol3 = input()
 elif Bag_Amount== 4 :
-    Vol1 = input()
-    Vol2 = input()
-    Vol3 = input()
-    Vol4 = input()
+  Vol1 = input()
+  Vol2 = input()
+  Vol3 = input()
+  Vol4 = input()
 elif Bag_Amount == 5 :
-    Vol1 = input()
-    Vol2 = input()
-    Vol3 = input()
-    Vol4 = input()
-    Vol5 = input()
+  Vol1 = input()
+  Vol2 = input()
+  Vol3 = input()
+  Vol4 = input()
+  Vol5 = input()
 elif Bag_Amount == 6 :
-    Vol1 = input()
-    Vol2 = input()
-    Vol3 = input()
-    Vol4 = input()
-    Vol5 = input()
-    Vol6 = input()
+  Vol1 = input()
+  Vol2 = input()
+  Vol3 = input()
+  Vol4 = input()
+  Vol5 = input()
+  Vol6 = input()
 elif Bag_Amount == 7 :
-    Vol1 = input()
-    Vol2 = input()
-    Vol3 = input()
-    Vol4 = input()
-    Vol5 = input()
-    Vol6 = input()
-    Vol7 = input()
+  Vol1 = input()
+  Vol2 = input()
+  Vol3 = input()
+  Vol4 = input()
+  Vol5 = input()
+  Vol6 = input()
+  Vol7 = input()
 elif Bag_Amount == 8 :
-    Vol1 = input()
-    Vol2 = input()
-    Vol3 = input()
-    Vol4 = input()
-    Vol5 = input()
-    Vol6 = input()
-    Vol7 = input()
-    Vol8 = input()
+  Vol1 = input()
+  Vol2 = input()
+  Vol3 = input()
+  Vol4 = input()
+  Vol5 = input()
+  Vol6 = input()
+  Vol7 = input()
+  Vol8 = input()
 else :
-    print("Too Many Volunteers")
+  print("Too Many Volunteers")
 print("What Coin Did Each Volunteer Count?")
+if Bag_Amount == 1 :
+  Coin_1  = input("What Coin Did",Vol1,"Count?")
+elif Bag_Amount == 2 :
+  Coin_2 = input("What Coin Did",Vol2,"Count?")
